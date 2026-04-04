@@ -1,0 +1,20 @@
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'MyCustomInter';
+  src: url('fonts/inter.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'MyCustomInter', sans-serif;
+}
