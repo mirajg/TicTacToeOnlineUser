@@ -1,15 +1,6 @@
 
-import React from 'react'
-import InsideGame from '@/components/InsideGame'
+import InsideGame from '@/components/game/InsideGame';
 
-const page = () => {
-  return (
-    <>
-      <main>
-        <InsideGame />
-      </main>
-    </>
-  )
+export default function HomePage() {
+  return <InsideGame />;
 }
-
-export default page
