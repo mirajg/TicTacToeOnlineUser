@@ -1,5 +1,6 @@
 
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   title: "Gridline | Online Tic-Tac-Toe",
@@ -9,7 +10,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script
+          type="module"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token":"002eb3130b424f4b89c0c3219eed9a76"}'
+        />
+      </body>
     </html>
   );
 }
